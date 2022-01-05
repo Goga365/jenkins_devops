@@ -43,4 +43,6 @@ app.post('/store-goal', (req, res) => {
   res.redirect('/');
 });
 
-app.listen(80);
+app.listen(3001, 'localhost', function() {
+  console.log("... port %d in %s mode", app.address().port, app.settings.env);
+});
