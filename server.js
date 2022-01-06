@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+
+
+
 let userGoal = 'Learn Docker!';
 
 app.use(
@@ -43,8 +46,6 @@ app.post('/store-goal', (req, res) => {
   res.redirect('/');
 });
 
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end();
-}).listen(80);
+
+
+app.listen(80, '127.0.0.1');
