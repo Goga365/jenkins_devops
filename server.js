@@ -48,4 +48,4 @@ app.post('/store-goal', (req, res) => {
 
 
 
-app.listen(80, '127.0.0.1');
+app.listen(80);
